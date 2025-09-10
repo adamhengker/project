@@ -1,27 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>daftar form</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Registrasi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://picsum.photos/1200/800') no-repeat center center/cover;
+    }
+
+    .register-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 40px;
+      width: 340px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .register-box h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .register-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .register-box button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #2196F3;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .register-box button:hover {
+      background: #1976D2;
+    }
+  </style>
 </head>
 <body>
-	<div class="login-container">
-		<h2>silahkan daftar terlebih dahulu</h2>
-		<form action="#" method="POST">
-			<label for="username">nama pengguna:</label>
-			<input type="text" id="username" name="username" placeholder="masukan nama pengguna" required>
-			<label for="password">kata sandi:</label>
-			<input type="password" id="password" name="password" placeholder="masukan kata sandi" required>
-			<label for="gmail">email:</label>
-			<input type="text" id="gmail" name="gmail" placeholder="masukan email" required>
-
-			<a href="index.html">
-			<button type="submit"><a href="index.html">daftar</button>
-			</a>
-         
-		</form>
-	</div>
+  <div class="register-box">
+    <h2>Registrasi</h2>
+    <form action="login.html">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Kata Sandi" required>
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
 </body>
 </html>
