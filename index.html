@@ -1,27 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>login form</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://picsum.photos/1200/800') no-repeat center center/cover;
+    }
+
+    .login-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 40px;
+      width: 320px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #45a049;
+    }
+
+    .login-box .daftar-btn {
+      background: #2196F3;
+    }
+
+    .login-box .daftar-btn:hover {
+      background: #1976D2;
+    }
+  </style>
 </head>
 <body>
-	<div class="login-container">
-		<h2>silahkan logian terlebih dahulu</h2>
-		<form action="#" method="POST">
-			<label for="username">nama pengguna:</label>
-			<input type="text" id="username" name="username" placeholder="masukan nama pengguna" required>
-			<label for="password">kata sandi:</label>
-			<input type="password" id="password" name="password" placeholder="masukan kata sandi" required>
-			<label>
-				<input type="checkbox" name="remember"> ingat saya
-			</label>
-			<button type="submit"><a href="f.html">login</a></button>
-
-			<p><a href="#"> lupa kata sandi anda?</a></p>
-			<p>belum punya akun? <a href="registrasi.html">daftar sekarang</a>.</p>
-		</form>
-	</div>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form action="cv.html">
+      <input type="text" placeholder="Nama" required>
+      <input type="password" placeholder="Kata Sandi" required>
+      <button type="submit">Login</button>
+    </form>
+    <form action="registrasi.html">
+      <button type="submit" class="daftar-btn">Daftar</button>
+    </form>
+  </div>
 </body>
 </html>
